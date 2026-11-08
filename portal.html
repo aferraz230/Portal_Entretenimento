@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+
+    <!-- O reset vem primeiro para retirar os padrões do navegador. -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <!-- Folha de estilo externa com a maior parte da formatação. -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <!-- CSS interno: regras específicas desta página. -->
+    <style>
+        .destaque { color: #f2c14e; font-weight: bold; }
+        #apresentacao { text-align: center; margin-bottom: 25px; }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1 id="titulo-principal">Meu Portal de Entretenimento Digital</h1>
+        <p id="apresentacao">Um espaço para descobrir novidades sobre filmes, música, games e tecnologia.</p>
+    </div>
+
+    <!-- Flexbox que organiza as três seções lado a lado. -->
+    <div class="container">
+        <!-- Seção 1: Filmes e Séries. -->
+        <div class="secao filmes">
+            <h2 class="titulo-secao">1. Filmes e Séries</h2>
+            <img src="imagens/01_filmes_e_series.png" alt="Ilustração de filmes" class="imagem-secao">
+            <p>Gosto de acompanhar filmes de ação, aventura e ficção científica. Essas produções apresentam histórias criativas e diferentes universos.</p>
+            <img src="imagens/04_serie.png" alt="Ilustração de séries" class="imagem-secao">
+            <p>As séries permitem acompanhar personagens e histórias por vários episódios, sendo uma opção de lazer.</p>
+            <img src="imagens/05_filme.png" alt="Ilustração de cinema" class="imagem-secao">
+            <p class="destaque" style="font-style: italic;">O cinema também é uma forma de conhecer novas ideias e culturas.</p>
+        </div>
+
+        <!-- Seção 2: Música e Podcasts. -->
+        <div class="secao musica">
+            <h2 class="titulo-secao">2. Música e Podcasts</h2>
+            <img src="imagens/02_musica_e_podcasts.png" alt="Ilustração de música" class="imagem-secao">
+            <p>A música faz parte do dia a dia, ajuda a relaxar e acompanha diferentes atividades.</p>
+            <img src="imagens/07_podcast.png" alt="Ilustração de podcast" class="imagem-secao">
+            <p>Os podcasts são programas em áudio que abordam tecnologia, notícias, entrevistas e entretenimento.</p>
+            <img src="imagens/06_musica.png" alt="Ilustração de áudio digital" class="imagem-secao">
+            <p class="destaque">As plataformas digitais facilitam o acesso a músicas e conteúdos em áudio.</p>
+        </div>
+
+        <!-- Seção 3: Games e Tecnologia. -->
+        <div class="secao games">
+            <h2 class="titulo-secao">3. Games e Tecnologia</h2>
+            <img src="imagens/03_games_e_tecnologia.png" alt="Ilustração de Tecnologia" class="imagem-secao">
+            <p>A inovação transforma a maneira como jogamos e nos conectamos.</p>
+            <img src="imagens/08_games.png" alt="Ilustração de controle de videogame" class="imagem-secao">
+            <p>Os games oferecem diversão, desafios e experiências que podem estimular o raciocínio e a criatividade.</p>
+            <img src="imagens/09_tecnologia.png" alt="Ilustração de computador" class="imagem-secao">
+            <p>A tecnologia está presente nos jogos, computadores, celulares e em várias ferramentas do cotidiano.</p>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p>Atividade de Desenvolvimento de Sistemas</p>
+        <p>Aluno: Alexandre Ferraz</p>
+    </div>
+</body>
+</html>

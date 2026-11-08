@@ -1,0 +1,56 @@
+/* Estilos gerais da página. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
+    color: #222;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Cabeçalho e título principal. */
+.cabecalho { background-color: #172b4d; color: white; padding: 25px; }
+#titulo-principal { text-align: center; font-size: 2em; font-weight: bold; margin-bottom: 12px; }
+
+/* Flexbox organiza as três colunas horizontalmente. */
+.container {
+    width: 96%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: stretch;
+}
+
+/* As seções dividem o espaço igualmente. */
+.secao {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: white;
+    padding: 18px;
+    border: 1px solid #c7d1df;
+}
+
+/* Classe compartilhada pelos títulos. */
+.titulo-secao {
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: bold;
+    color: #172b4d;
+    margin-bottom: 15px;
+}
+
+/* Classe compartilhada pelas imagens. */
+.imagem-secao { width: 100%; height: auto; margin-top: 12px; margin-bottom: 12px; }
+.secao p { margin-bottom: 14px; }
+
+/* Identificação visual das três seções. */
+.filmes { border-top: 5px solid #d59b26; }
+.musica { border-top: 5px solid #31988d; }
+.games { border-top: 5px solid #6662aa; }
+
+.rodape { background-color: #172b4d; color: white; text-align: center; padding: 18px; }
+
+/* Em telas estreitas, as colunas ficam uma abaixo da outra. */
+@media (max-width: 800px) {
+    .container { flex-direction: column; }
+}
